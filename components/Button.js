@@ -1,18 +1,24 @@
-import React from "react";
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, TouchableOpacity, Text} from "react-native";
 
 
 
 
     const TransformingButton = (props) => {
 
+        const handlePress = () => {
+            // alert("Hellow testing");
+            props.onPress
+        }
         return(
 
-            <TouchableOpacity style = {styles.transButton}>
+            <TouchableOpacity style = {styles.transButton} onPress = {() => handlePress()}>
                 <Text style = {styles.buttonText}>{props.text}</Text>
             </TouchableOpacity>
 
         )
+
+        
     }
 
 

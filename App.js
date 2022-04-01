@@ -4,6 +4,8 @@ import TransformingButton from './components/Button';
 
 
 export default function App() {
+
+
   return (
     <View style={styles.container}>
 
@@ -21,8 +23,8 @@ export default function App() {
 
         <View style={styles.rightContainer}>
 
-          <Text style={styles.firstText}>Hellow, welcome to Transformia!</Text>
-          <Text style={styles.secondText}>Select your desired transformation</Text>
+          <Text style={styles.firstText}>Hellow!!</Text>
+          <Text style={styles.secondText}>Whats your transformation?</Text>
 
         </View>
 
